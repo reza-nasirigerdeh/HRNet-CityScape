@@ -211,8 +211,7 @@ def main():
         )
     else:
         model = nn.DataParallel(model, device_ids=gpus).cuda()
-    
-
+   
     # optimizer
     if config.TRAIN.OPTIMIZER == 'sgd':
 
